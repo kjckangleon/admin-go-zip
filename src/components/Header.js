@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { PURPLE } from "../settings/colors";
 import { generateIcon, Icon } from "../settings/generate-icon";
 import LanguageDropdown from "./shared/LanguageDropdown";
 import NavButton from "./shared/NavButton";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
-  const [language, setLanguage] = React.useState(
-    localStorage.getItem("lang") || "en"
-  );
+  const [language, setLanguage] = useState(localStorage.getItem("lang") || "en");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLanguageChange = (e) => {
     setLanguage(e.target.value);
@@ -17,22 +17,24 @@ const Header = () => {
     location.reload();
   };
 
+  useEffect(() => {
+    const closeMenu = () => setMenuOpen(false);
+    window.addEventListener("resize", closeMenu);
+    return () => window.removeEventListener("resize", closeMenu);
+  }, []);
+
   return (
     <Nav>
-      <Icon
-        src={generateIcon("Logo")}
-        style={{ height: "40px", width: "40px" }}
-      />
+      <Left>
+        <Icon src={generateIcon("Logo")} style={{ height: "40px", width: "40px" }} />
+        <Burger onClick={() => setMenuOpen((prev) => !prev)}>
+          <FaBars size={24} />
+        </Burger>
+      </Left>
 
-      <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-        <NavButton
-          to="/home"
-        >
-          Home
-        </NavButton>
-
+      <Right open={menuOpen}>
+        <NavButton to="/home">Home</NavButton>
         <NavButton to="/courses">Courses</NavButton>
-
         <NavButton
           to="/study"
           dropdownItems={[
@@ -43,7 +45,6 @@ const Header = () => {
         >
           Study
         </NavButton>
-
         <NavButton
           to="/finance"
           dropdownItems={[
@@ -53,30 +54,61 @@ const Header = () => {
         >
           Finance
         </NavButton>
-
         <NavButton to="/refer-a-friend">Refer a friend</NavButton>
         <NavButton to="/contact">Contact</NavButton>
-      </div>
-
-
-      <LanguageDropdown value={language} onChange={handleLanguageChange} />
+        <LanguageDropdown value={language} onChange={handleLanguageChange} />
+      </Right>
     </Nav>
   );
 };
 
+export default Header;
+
+// === Styled Components ===
+
 const Nav = styled.nav`
-  padding: 1rem 2rem;
   background: ${PURPLE};
   color: white;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1000; /* make sure it stays on top */
+  z-index: 1000;
 `;
 
-const Logo = styled.h1`
-  font-size: 1.5rem;
+const Left = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
-export default Header;
+const Burger = styled.button`
+  background: none;
+  border: none;
+  color: white;
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const Right = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: ${PURPLE};
+    padding: 1rem 2rem;
+    display: ${({ open }) => (open ? "flex" : "none")};
+  }
+`;
