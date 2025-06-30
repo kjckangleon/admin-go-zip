@@ -429,5 +429,188 @@ export const TRANSLATION = {
   bachelor_footer: {
     en: "With AdmitGo, your UK study journey starts here. We’ll guide you every step of the way — from application to graduation.",
     pl: "Z AdmitGo Twoja przygoda ze studiami w Wielkiej Brytanii zaczyna się już dziś. Wspieramy Cię na każdym etapie — od aplikacji po ukończenie studiów.",
-  }
+  },
+  master_title: {
+    en: "Master’s Degree in the UK with AdmitGo",
+    pl: "Studia Magisterskie w Wielkiej Brytanii z AdmitGo",
+  },
+  master_intro: {
+    en: "Advance your education and career with a one-year UK Master’s program.",
+    pl: "Rozwiń swoją edukację i karierę dzięki rocznym studiom magisterskim w Wielkiej Brytanii.",
+  },
+  master_cta: {
+    en: "Start Your Master's Journey",
+    pl: "Rozpocznij swoją przygodę z magisterką",
+  },
+
+  master_value_title: {
+    en: "Why pursue a Master’s degree in the UK?",
+    pl: "Dlaczego warto studiować magisterkę w Wielkiej Brytanii?",
+  },
+  master_value_text: {
+    en: `
+      • Only 1 year of study\n
+      • World-class education with globally recognised qualifications\n
+      • Innovative and supportive learning environment\n
+      • High academic standards across all programmes\n
+      • Collaborative relationships with academic staff\n
+      • Personalised and student-friendly approach\n
+      • Strong focus on practical skills and employability
+    `,
+    pl: `
+      • Tylko 1 rok nauki\n
+      • Edukacja na światowym poziomie i uznane kwalifikacje\n
+      • Innowacyjne i wspierające środowisko nauki\n
+      • Wysokie standardy akademickie\n
+      • Współpraca z wykładowcami\n
+      • Indywidualne podejście do studentów\n
+      • Praktyczne umiejętności i szanse zatrudnienia
+    `,
+  },
+
+  master_facts_title: {
+    en: "Master’s in the UK — Key Facts",
+    pl: "Studia magisterskie w Wielkiej Brytanii – Kluczowe fakty",
+  },
+  master_facts_list: {
+    en: [
+      "Most UK Master’s programmes last 1 year (some 2 years).",
+      "Combines theory and real-world application.",
+      "Small-group classes that promote independent thinking.",
+      "Graduates are prepared for the workforce."
+    ],
+    pl: [
+      "Większość programów trwa 1 rok (niektóre 2 lata).",
+      "Połączenie teorii z praktyką.",
+      "Zajęcia w małych grupach sprzyjające samodzielnemu myśleniu.",
+      "Absolwenci są gotowi do pracy zawodowej."
+    ],
+  },
+
+  master_types_title: {
+    en: "Two Types of Master’s Programmes",
+    pl: "Dwa typy programów magisterskich",
+  },
+  master_types_list: {
+    en: [
+      "Taught – lectures, seminars, practicals + 20–30 page dissertation (no defense).",
+      "Research – focused on original research and writing a thesis.",
+      "Degrees awarded: MA, MSc, MSc by Research."
+    ],
+    pl: [
+      "Taught – wykłady, seminaria, zajęcia praktyczne + praca dyplomowa (bez obrony).",
+      "Research – oryginalne badania i napisanie pracy naukowej.",
+      "Rodzaje dyplomów: MA, MSc, MSc by Research."
+    ],
+  },
+
+  master_choose_title: {
+    en: "Choosing a University and Subject",
+    pl: "Wybór uczelni i kierunku",
+  },
+  master_choose_text: {
+    en: `
+      Almost all UK universities offer Master’s programmes. Choose one that offers your field. 
+      You don’t need the exact same Bachelor’s major — related fields are accepted. 
+      Check each university's site for entry requirements.
+    `,
+    pl: `
+      Prawie wszystkie brytyjskie uczelnie oferują programy magisterskie. 
+      Wybierz taką, która oferuje Twój kierunek. 
+      Nie musisz mieć identycznego kierunku z licencjatem — pokrewne są akceptowane. 
+      Sprawdź wymagania na stronie uczelni.
+    `,
+  },
+
+  master_cost_title: {
+    en: "How Much Does It Cost?",
+    pl: "Ile to kosztuje?",
+  },
+  master_cost_list: {
+    en: [
+      "Tuition fees vary by university and course.",
+      "Some allow installment payments.",
+      "EU students may be eligible for:",
+      "• Scholarships",
+      "• Postgraduate loans (up to £10,609)"
+    ],
+    pl: [
+      "Czesne zależy od uczelni i kierunku.",
+      "Niektóre uczelnie umożliwiają płatność ratalną.",
+      "Studenci z UE (w tym Polacy) mogą ubiegać się o:",
+      "• Stypendia",
+      "• Pożyczki magisterskie (do £10,609)"
+    ],
+  },
+
+  master_requirements_title: {
+    en: "Admission & Requirements",
+    pl: "Wymagania i rekrutacja",
+  },
+  master_requirements_list: {
+    en: [
+      "Apply directly to universities (not via UCAS).",
+      "Application form in English",
+      "IELTS certificate (usually 6.5 or higher)",
+      "Personal Statement (motivation letter)",
+      "Bachelor's diploma (translated)",
+      "Transcript of Records",
+      "Two reference letters (professors/employers)",
+      "GRE – only for some programs (e.g., Math, Econ)"
+    ],
+    pl: [
+      "Aplikuj bezpośrednio do uczelni (nie przez UCAS).",
+      "Formularz aplikacyjny po angielsku",
+      "Certyfikat IELTS (zwykle 6.5 lub wyższy)",
+      "List motywacyjny",
+      "Dyplom licencjata (przetłumaczony)",
+      "Wykaz ocen (Transcript of Records)",
+      "Dwa listy referencyjne (od wykładowców/pracodawców)",
+      "GRE – tylko dla niektórych kierunków (np. matematyka, ekonomia)"
+    ],
+  },
+
+  master_support_title: {
+    en: "How AdmitGo Supports You",
+    pl: "Jak AdmitGo Cię wspiera",
+  },
+  master_support_text: {
+    en: "From choosing your programme to applying and securing funding — we’ll help you succeed.",
+    pl: "Od wyboru programu po aplikację i zdobycie finansowania — pomożemy Ci osiągnąć sukces.",
+  },
+  master_apply_title: {
+    en: "How to Apply",
+    pl: "Jak aplikować",
+  },
+  master_apply_list: {
+    en: [
+      "Master’s applications are NOT submitted via UCAS.",
+      "You must apply directly to the university (usually online).",
+      "Each university publishes its own entry requirements.",
+      "Start early – the process can take several months.",
+      "Required documents:",
+      "• Application form (in English)",
+      "• IELTS certificate (usually 6.5+)",
+      "• Personal Statement (motivation letter)",
+      "• Transcript of Records (Bachelor’s grades)",
+      "• Bachelor’s diploma (official translation)",
+      "• Two reference letters (professors or employers)",
+      "• Portfolio or work samples (if required)",
+    ],
+    pl: [
+      "Aplikacja na studia magisterskie NIE odbywa się przez UCAS.",
+      "Musisz aplikować bezpośrednio do wybranej uczelni (zwykle online).",
+      "Każda uczelnia publikuje własne wymagania rekrutacyjne.",
+      "Zacznij wcześnie – proces może zająć kilka miesięcy.",
+      "Wymagane dokumenty:",
+      "• Formularz aplikacyjny (po angielsku)",
+      "• Certyfikat IELTS (zazwyczaj 6.5+)",
+      "• List motywacyjny (Personal Statement)",
+      "• Wykaz ocen z licencjatu (Transcript of Records)",
+      "• Dyplom licencjacki (przetłumaczony oficjalnie)",
+      "• Dwa listy referencyjne (od wykładowców lub pracodawców)",
+      "• Portfolio lub próbki prac (jeśli wymagane)",
+    ],
+  },
+
 };

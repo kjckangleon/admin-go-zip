@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, p, span, li, ul {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin: 0;

@@ -9,6 +9,7 @@ import Footer from "components/Footer";
 import Home from "pages/home/Home";
 import YearZero from "pages/year-zero/YearZero";
 import Bachelor from "pages/bachelor/Bachelor";
+import Master from "pages/master/MasterDegree";
 // import Master from "./pages/Master";
 // import Contact from "./pages/Contact";
 // import Courses from "./pages/Courses";
@@ -31,7 +32,8 @@ const App = () => (
       <Route path="/home" element={<Home />} />
       <Route path="/study/year-zero" element={<YearZero />} />
       <Route path="/study/bachelor" element={<Bachelor />} />
-      {/* <Route path="/master" element={<Master />} />
+      <Route path="/study/master" element={<Master />} /> 
+      {/* 
       <Route path="/courses" element={<Courses />} />
       <Route path="/finance" element={<Finance />} />
       <Route path="/contact" element={<Contact />} />

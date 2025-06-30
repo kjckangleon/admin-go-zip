@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import {
-  ORANGE,
   PURPLE,
   DARK_PURPLE,
   LIGHT_ORANGE,
@@ -30,19 +29,21 @@ const BachelorPage = () => {
         <p>{TRANSLATION?.bachelor_intro[lang]}</p>
       </Hero>
 
-      <SectionTwoCol>
-        <TextCol>
-          <h2>{TRANSLATION?.bachelor_why_title[lang]}</h2>
-          <ul>
-            {TRANSLATION?.bachelor_why_list[lang].map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </TextCol>
-        <ImageCol>
-          <StyledImage src={w1} alt="Why study in the UK" />
-        </ImageCol>
-      </SectionTwoCol>
+      <Container>
+        <Section>
+          <TextBlock>
+            <h2>{TRANSLATION?.bachelor_why_title[lang]}</h2>
+            <ul>
+              {TRANSLATION?.bachelor_why_list[lang].map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </TextBlock>
+          <ImageBlock>
+            <StyledImage src={w1} alt="Why study in the UK" />
+          </ImageBlock>
+        </Section>
+      </Container>
 
       <FullWidthText>
         <h2>{TRANSLATION?.bachelor_value_title[lang]}</h2>
@@ -75,43 +76,49 @@ const BachelorPage = () => {
         </FactCard>
       </FactGrid>
 
-      <SectionTwoCol>
-        <ImageCol>
-          <StyledImage src={w3} alt="Flexible study formats" />
-        </ImageCol>
-        <TextCol>
-          <h2>{TRANSLATION?.bachelor_flex_title[lang]}</h2>
-          <p>{TRANSLATION?.bachelor_flex_text[lang]}</p>
-        </TextCol>
-      </SectionTwoCol>
+      <Container>
+        <Section>
+          <ImageBlock>
+            <StyledImage src={w3} alt="Flexible study formats" />
+          </ImageBlock>
+          <TextBlock>
+            <h2>{TRANSLATION?.bachelor_flex_title[lang]}</h2>
+            <p>{TRANSLATION?.bachelor_flex_text[lang]}</p>
+          </TextBlock>
+        </Section>
+      </Container>
 
-      <SectionTwoCol>
-        <TextCol>
-          <h2>{TRANSLATION?.bachelor_popular_title[lang]}</h2>
-          <ol>
-            {TRANSLATION?.bachelor_popular_list[lang]?.map((course, i) => (
-              <li key={i}>{course}</li>
-            ))}
-          </ol>
-        </TextCol>
-        <ImageCol>
-          <StyledImage src={w2} alt="Popular Courses" />
-        </ImageCol>
-      </SectionTwoCol>
+      <Container>
+        <Section>
+          <TextBlock>
+            <h2>{TRANSLATION?.bachelor_popular_title[lang]}</h2>
+            <ol>
+              {TRANSLATION?.bachelor_popular_list[lang]?.map((course, i) => (
+                <li key={i}>{course}</li>
+              ))}
+            </ol>
+          </TextBlock>
+          <ImageBlock>
+            <StyledImage src={w2} alt="Popular Courses" />
+          </ImageBlock>
+        </Section>
+      </Container>
 
-      <SectionTwoCol>
-        <ImageCol>
-          <StyledImage src={w5} alt="Learning Experience" />
-        </ImageCol>
-        <TextCol>
-          <h2>{TRANSLATION?.bachelor_experience_title[lang]}</h2>
-          <ul>
-            {TRANSLATION?.bachelor_experience_list[lang].map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </TextCol>
-      </SectionTwoCol>
+      <Container>
+        <Section>
+          <ImageBlock>
+            <StyledImage src={w5} alt="Learning Experience" />
+          </ImageBlock>
+          <TextBlock>
+            <h2>{TRANSLATION?.bachelor_experience_title[lang]}</h2>
+            <ul>
+              {TRANSLATION?.bachelor_experience_list[lang].map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </TextBlock>
+        </Section>
+      </Container>
 
       <FullWidthText>
         <h2>{TRANSLATION?.bachelor_intern_title[lang]}</h2>
@@ -123,40 +130,46 @@ const BachelorPage = () => {
         </ul>
       </FullWidthText>
 
-      <SectionTwoCol>
-        <ImageCol>
-          <StyledImage src={w4} alt="Internship opportunities" />
-        </ImageCol>
-        <TextCol>
-          <h2>{TRANSLATION?.bachelor_apply_title[lang]}</h2>
-          <p>{TRANSLATION?.bachelor_apply_text[lang]}</p>
-        </TextCol>
-      </SectionTwoCol>
+      <Container>
+        <Section>
+          <TextBlock>
+            <h2>{TRANSLATION?.bachelor_apply_title[lang]}</h2>
+            <p>{TRANSLATION?.bachelor_apply_text[lang]}</p>
+          </TextBlock>
+          <ImageBlock>
+            <StyledImage src={w4} alt="Internship opportunities" />
+          </ImageBlock>
+        </Section>
+      </Container>
 
-      <SectionTwoCol isReversed>
-        <ImageCol>
-          <StyledImage src={w2} alt="Finance" />
-        </ImageCol>
-        <TextCol>
-          <h2>{TRANSLATION?.bachelor_finance_title[lang]}</h2>
-          <p>{TRANSLATION?.bachelor_finance_text[lang]}</p>
-        </TextCol>
-      </SectionTwoCol>
+      <Container>
+        <Section>
+          <ImageBlock>
+            <StyledImage src={w2} alt="Finance" />
+          </ImageBlock>
+          <TextBlock>
+            <h2>{TRANSLATION?.bachelor_finance_title[lang]}</h2>
+            <p>{TRANSLATION?.bachelor_finance_text[lang]}</p>
+          </TextBlock>
+        </Section>
+      </Container>
 
-      <SectionTwoCol>
-        <ImageCol>
-          <StyledImage src={w1} alt="Career title" />
-        </ImageCol>
-        <TextCol>
-          <h2>{TRANSLATION?.bachelor_career_title[lang]}</h2>
-          <p>{TRANSLATION?.bachelor_career_text[lang]}</p>
-          <ul>
-            {TRANSLATION?.bachelor_skills_list[lang].map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </TextCol>
-      </SectionTwoCol>
+      <Container>
+        <Section>
+          <TextBlock>
+            <h2>{TRANSLATION?.bachelor_career_title[lang]}</h2>
+            <p>{TRANSLATION?.bachelor_career_text[lang]}</p>
+            <ul>
+              {TRANSLATION?.bachelor_skills_list[lang].map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </TextBlock>
+          <ImageBlock>
+            <StyledImage src={w1} alt="Career title" />
+          </ImageBlock>
+        </Section>
+      </Container>
 
       <FullWidthText>
         <h2>{TRANSLATION?.bachelor_faq_title?.[lang]}</h2>
@@ -178,6 +191,12 @@ const BachelorPage = () => {
 };
 
 export default BachelorPage;
+
+const Container = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+`;
 
 const PageWrapper = styled.div`
   background: #fff;
@@ -202,38 +221,23 @@ const Hero = styled.section`
   }
 `;
 
-const SectionTwoCol = styled.section`
+const Section = styled.section`
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: ${({ isReversed }) => (isReversed ? "row-reverse" : "row")};
-  padding: 4rem 2rem;
+  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+  align-items: stretch;
+  margin-bottom: 3rem;
   background: white;
-`;
-
-const TextCol = styled.div`
-  flex: 1;
-  padding: 1.5rem;
-
-  h2 {
-    color: ${PURPLE};
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 
-  ul, ol {
-    padding-left: 1.2rem;
-    line-height: 1.7;
+  &:hover {
+    transform: translateY(-2px);
   }
-`;
-
-const ImageCol = styled.div`
-  flex: 1;
-  background: none;
-  min-height: 300px;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const StyledImage = styled.img`
@@ -245,7 +249,7 @@ const StyledImage = styled.img`
 `;
 
 const FullWidthText = styled.section`
-  padding: 4rem 2rem;
+  padding: 4rem 14rem;
   background: ${LIGHT_ORANGE};
   text-align: center;
 
@@ -271,7 +275,7 @@ const FullWidthText = styled.section`
 `;
 
 const FactGrid = styled.section`
-  padding: 4rem 2rem;
+  padding: 4rem 14rem;
   background: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -306,5 +310,39 @@ const FactCard = styled.div`
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+`;
+
+const ImageBlock = styled.div`
+  flex: 1;
+  min-height: 300px;
+  max-height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+`;
+
+const TextBlock = styled.div`
+  flex: 1;
+  padding: 2rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    color: ${PURPLE};
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+
+  p,
+  ul {
+    color: ${DARK_PURPLE};
+    line-height: 1.75;
+    padding-left: 10px;
   }
 `;
