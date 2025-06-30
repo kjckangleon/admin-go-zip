@@ -64,8 +64,6 @@ const Header = () => {
 
 export default Header;
 
-// === Styled Components ===
-
 const Nav = styled.nav`
   background: ${PURPLE};
   color: white;
