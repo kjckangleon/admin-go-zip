@@ -178,19 +178,6 @@ const HeroIntro = styled.div`
   }
 `;
 
-const CallToActionButton = styled.button`
-  background: ${ORANGE};
-  color: white;
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-`;
-
 const Section = styled.section`
   display: flex;
   flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
