@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { PURPLE } from "../settings/colors";
 import { generateIcon, Icon } from "../settings/generate-icon";
 import LanguageDropdown from "./shared/LanguageDropdown";
-import { NavButton } from "./shared/NavButton";
 
 const Header = () => {
   const [language, setLanguage] = React.useState(
@@ -22,16 +21,6 @@ const Header = () => {
         src={generateIcon("Logo")}
         style={{ height: "40px", width: "40px" }}
       />
-
-      <div style={{ display: "flex", gap: "1rem" }}>
-        <NavButton to="/home">Home</NavButton>
-        <NavButton to="/courses">Courses</NavButton>
-        <NavButton to="/study">Study</NavButton>
-        <NavButton to="/finance">Finance</NavButton>
-        <NavButton to="/refer-a-friend">Refer a friend</NavButton>
-        <NavButton to="/contanct">Contanct</NavButton>
-      </div>
-
 
       <LanguageDropdown value={language} onChange={handleLanguageChange} />
     </Nav>
